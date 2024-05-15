@@ -75,8 +75,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   const nextButton = document.getElementById('next-btn');
   const previousButton = document.getElementById('prev-btn');
-  const container = document.querySelector('.achievements');
-  const items = document.querySelector('.certificates');
+  const container = document.querySelector('.certificates');
+  const items = document.querySelector('.items');
 
   let currentIndex = 0;
 
@@ -84,11 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const itemWidth = items.children[0].offsetWidth;
 
     currentIndex++;
-    if (currentIndex >= items.children.length - 2) {
+    if (currentIndex >= items.children.length) {
       currentIndex = 0;
     }
 
-    const scrollAmount = currentIndex * (itemWidth);
+    const scrollAmount = currentIndex * (itemWidth + 10);
     
     container.scrollTo({
       left: scrollAmount,
@@ -101,10 +101,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     currentIndex--;
     if (currentIndex < 0) {
-      currentIndex = items.children.length - 3;
+      currentIndex = items.children.length - 1;
     }
 
-    const scrollAmount = currentIndex * (itemWidth);
+    const scrollAmount = currentIndex * (itemWidth + 10);
     
     container.scrollTo({
       left: scrollAmount,
