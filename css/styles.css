@@ -27,13 +27,13 @@ a {
     top: 0;
     width: 100%;
     z-index: 100000;
-    padding-block: 1.3em;
+    padding-block: 1em;
     background-color: rgb(12, 12, 27);
 }
 
 .nav-bar ul {
     display: flex;
-    gap: 5.5em;
+    gap: 3em;
 }
 
 .nav-bar ul li a {
@@ -50,7 +50,7 @@ a {
 }
 
 .nav-bar ul li a:hover {
-    color: coral; /* to fix */
+    color: rgb(109, 187, 211); /* to fix */
     cursor: pointer;
 }
 
@@ -60,8 +60,7 @@ a {
 
 .title {
     background-color: cadetblue;
-    margin-top: 95px;
-    height: 640px;
+    height: 740px;
 }
 
 h1 {
@@ -70,13 +69,13 @@ h1 {
     font-size: 3.5em;
     color: rgb(139, 248, 211);
     text-align: center;
-    margin: 3em 1.5em 0em 1.5em;
+    margin: 6em 1.5em 0em 1.5em;
 }
 
 .about {
     display: flex;
     justify-content: space-evenly;
-    padding: 4em 0em 4em 0em;
+    padding: 7em 0em;
 }
 
 .about p {
@@ -136,7 +135,12 @@ h1 {
 .achieve {
     display: flex;
     flex-direction: column;
-    margin: 1.5em 9em 0em 0em;
+    margin: 0em 7em 0em 0em;
+    padding: 2em;
+    height: 532px;
+    background-color: cadetblue;
+    border-radius: 2ch;
+    box-shadow: rgb(219, 219, 219) 1px 1px 15px 1px;
 }
 
 .github-stats {
