@@ -27,7 +27,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 100000;
-    padding-block: 1em;
+    padding-block: 0.7em;
     background-color: rgb(12, 12, 27);
 }
 
@@ -44,7 +44,7 @@ a {
 
 .nav-bar ul li {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 0.5em;
     border-radius: 100px;
 }
@@ -55,7 +55,7 @@ a {
 }
 
 .nav-bar ul li a:active {
-    font-size: 22px;
+    font-size: 21px;
 }
 
 .title {
@@ -107,12 +107,13 @@ h1 {
 .certificates {
     max-width: 370px;
     overflow-x: hidden;
+    border-radius: 1ch;
+    box-shadow: rgb(220, 220, 220) 1px 1px 15px 1px;
 }
 
 .items {
     display: flex;
 }
-
 
 .certificate {
     width: 370px;
@@ -120,16 +121,32 @@ h1 {
     margin-right: 10px;
 }
 
-#next-btn {
-    position: absolute;
-    right: 20px;
-    bottom: -700px;
+button img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+button img:active {
+    width: 25px;
+}
+
+#prev-btn, #next-btn {
+    background-color: cadetblue;
+    border: none;
+    width: 30px;
+    height: auto;
+    align-self: center;
+    position: relative;
 }
 
 #prev-btn {
-    position: absolute;
-    right: 20px;
-    bottom: -720px;
+    left: 30px;
+}
+
+#next-btn {
+    left: -30px;
 }
 
 .achieve {
@@ -139,8 +156,8 @@ h1 {
     padding: 2em;
     height: 532px;
     background-color: cadetblue;
-    border-radius: 2ch;
-    box-shadow: rgb(219, 219, 219) 1px 1px 15px 1px;
+    border-radius: 1ch;
+    box-shadow: rgb(220, 220, 220) 1px 1px 15px 1px;
 }
 
 .github-stats {
