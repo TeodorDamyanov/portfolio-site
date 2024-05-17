@@ -98,7 +98,7 @@ h1 {
 }
 
 .achievements {
-    padding: 40px 0px 40px 0px;
+    padding: 40px 0px;
     background-color: cadetblue;
     display: flex;
     justify-content: space-around;
@@ -109,6 +109,22 @@ h1 {
     overflow-x: hidden;
     border-radius: 1ch;
     box-shadow: rgb(220, 220, 220) 1px 1px 15px 1px;
+}
+
+.cert-sect {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.cert-sect p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    text-align: center;
+    align-self: center;
+    color: rgb(237, 237, 237);
 }
 
 .items {
@@ -142,17 +158,17 @@ button img:active {
 }
 
 #prev-btn {
-    left: 30px;
+    left: 38px;
 }
 
 #next-btn {
-    left: -30px;
+    left: -38px;
 }
 
 .achieve {
     display: flex;
     flex-direction: column;
-    margin: 0em 7em 0em 0em;
+    margin: 49.6px 5em 0em 0em;
     padding: 2em;
     height: 532px;
     background-color: cadetblue;
