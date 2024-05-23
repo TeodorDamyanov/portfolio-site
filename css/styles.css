@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+15&family=Pixelify+Sans:wght@400..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Danfo&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -59,17 +58,23 @@ a {
 }
 
 .title {
-    background-color: cadetblue;
-    height: 740px;
+    height: 800px;
+    background-image: url("../images/background1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 h1 {
-    font-weight: 500;
-    font-family: 'Jersey 15', sans-serif;
-    font-size: 3.5em;
-    color: rgb(139, 248, 211);
+    font-weight: bold;
+    font-family: "Danfo", serif;
+    font-size: 5em;
     text-align: center;
-    margin: 6em 1.5em 0em 1.5em;
+    margin: 4em 1.5em 0em 1.5em;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: transparent;
+    background-clip: text;
 }
 
 .about {
