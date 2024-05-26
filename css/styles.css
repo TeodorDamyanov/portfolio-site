@@ -58,23 +58,36 @@ a {
 }
 
 .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 800px;
-    background-image: url("../images/background1.jpg");
+    background-image: url("../images/background3.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-h1 {
+.title h1 {
     font-weight: bold;
     font-family: "Danfo", serif;
-    font-size: 5em;
     text-align: center;
-    margin: 4em 1.5em 0em 1.5em;
+    font-size: 80px;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     color: transparent;
     background-clip: text;
+}
+
+.title a {
+    align-self: center;
+    margin-top: 8em;
+    background-color: transparent;
+    color: LavenderBlush;
+    font-size: 1.4em;
+    font-weight: bold;
+    border-radius: 0.5ch;
+    padding: 0.5em 1.2em;
 }
 
 .about {
@@ -194,7 +207,7 @@ button img:active {
     background-color: rgb(12, 12, 27);
     font-size: 1.4em;
     font-weight: bold;
-    border-radius: 1ch;
+    border-radius: 0.5ch;
     padding: 0.5em 1.2em;
 }
 
